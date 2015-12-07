@@ -1,0 +1,13 @@
+// Place your key bindings in this file to overwrite the defaults
+[
+  { "key": "ctrl+shift+d",              "command": "editor.action.changeAll",
+                                            "when": "editorTextFocus" },
+  { "key": "ctrl+alt+d",                "command": "workbench.view.debug" },
+  { "key": "ctrl+alt+shift+up",         "command": "editor.action.insertCursorAbove",
+                                            "when": "editorTextFocus" },
+  { "key": "ctrl+alt+shift+down",       "command": "editor.action.insertCursorBelow",
+                                            "when": "editorTextFocus" },
+  { "key": "ctrl+k left",               "command": "workbench.action.focusLeftEditor" },
+  { "key": "ctrl+k right",              "command": "workbench.action.focusRightEditor" },
+  { "key": "ctrl+\\",                "command": "workbench.action.toggleSidebarVisibility" }
+]

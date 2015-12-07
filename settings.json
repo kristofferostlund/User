@@ -1,0 +1,19 @@
+// Place your settings in this file to overwrite the default settings
+{
+	"editor.glyphMargin": true,
+	"editor.renderWhitespace": true,
+	"editor.insertSpaces": true,
+  "editor.tabSize": 2,
+  "javascript.suggest.useCodeSnippetsOnMethodSuggest": true,
+  "search.exclude": {
+    "**/node_modules": true,
+    "**/bower_components": true,
+    "**/.sass-cache": true,
+    "**/.tmp": true,
+    "**/.server": true,
+    "**/null": true,
+    "**/dist": true,
+    "**/typings": true,
+    "**/_site": true
+  }
+}

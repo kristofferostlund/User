@@ -1,0 +1,115 @@
+{
+	 // Place your snippets for JavaScript here. Each snippet is defined under a snippet name and has a prefix, body and 
+	 // description. The prefix is what is used to trigger the snippet and the body will be expanded and inserted. Possible variables are:
+	 // $1, $2 for tab stops, ${id} and ${id:label} and ${1:label} for variables. Variables with the same id are connected.
+	 // Example:
+  "Print to console": {
+    "prefix": "log",
+    "body": [
+      "console.log($1);"
+    ],
+    "description": "Log output to console"
+  },
+  "Also print to console": {
+    "prefix": "_log",
+    "body": [
+      "console.log($1);"
+    ],
+    "description": "Log output to console"
+  },
+  "For loop with i": {
+    "prefix": "fori",
+    "body": [
+      "for (var ${i} = 0; ${i} < ${length}; ${i}++) {",
+        "$3",
+      "}"
+    ],
+    "description": "Scaffolds the basics of a for loop with the variable i set as the index."
+  },
+  "For loop with i going from greatest to zero": {
+    "prefix": "forii",
+    "body": [
+      "for (var ${i} = ${length}; ${i} >= 0; ${i}--) {",
+        "$3",
+      "}"
+    ],
+    "description": "Scaffolds the basics of a for loop with the variable i set as the index."
+  },
+  "new Promise": {
+    "prefix": "prom",
+    "body": [
+      "new Promise(function (resolve, reject) {",
+      "  $1",
+      "});"
+    ]
+  },
+  "alias for prom, sort of": {
+    "prefix": "_p",
+    "body": [
+      "new Promise(function (resolve, reject) {",
+      "  $1",
+      "});"
+    ],
+    "description": "Scaffolds out the base for a new Promise"
+  },
+  "new $q promise": {
+    "prefix": "_q",
+    "body": [
+      "$q(function (resolve, reject) {",
+      "  $1",
+      "});"
+    ]
+  },
+  "Function yo": {
+    "prefix": "_func", 
+    "body": [
+      "function ${1:name}(${2:params}) {",
+      "  $3",
+      "}"
+    ]
+  },
+  "Oneliner function": {
+    "prefix": "__func", 
+    "body": [
+      "function (${1:params}) { $2 }"
+    ]
+  },
+  "Wrapping-variable require": {
+    "prefix": "_req",
+    "body": [
+      "var ${1:module} = require('${2:${1:module}}');"
+    ]
+  },
+  "Appends .then(...) and .catch(...) for Promises": {
+    "prefix": "_then",
+    "body": [
+      ".then(function (${1:result}) {",
+      "  ${3}",
+      "})",
+      ".catch(function (${2:err}) {",
+      "  ",
+      "});"
+    ]
+  },
+  "Base node module": {
+    "prefix": "_mod",
+    "body": [
+      "'use strict'",
+      "",
+      "var _ = require('lodash');",
+      "var Promise = require('bluebird');",
+      "var chalk = require('chalk');",
+      ""
+    ]
+  },
+  "The error handler method for express": {
+    "prefix": "_handleError",
+    "body": [
+      "function handleError(res, err) {",
+      "  console.log(chalk.red(err));",
+      "  res.status(500).send('Internal Error');",
+      "};"
+    ]
+  }
+  
+}

@@ -1,0 +1,33 @@
+{
+/*
+	 // Place your snippets for HTML here. Each snippet is defined under a snippet name and has a prefix, body and 
+	 // description. The prefix is what is used to trigger the snippet and the body will be expanded and inserted. Possible variables are:
+	 // $1, $2 for tab stops, ${id} and ${id:label} and ${1:label} for variables. Variables with the same id are connected.
+	 // Example:
+	 "Print to console": {
+		"prefix": "log",
+		"body": [
+			"console.log('$1');",
+			"$2"
+		],
+		"description": "Log output to console"
+	}
+*/
+  "HTML basic structure": {
+    "prefix": "_html",
+    "body": [
+      "<!DOCTYPE html>", 
+      "<html>",
+      "<head>",
+      "  <meta charset=\"UTF-8\">",
+      "  <title>${1:Page Title}</title>",
+      "  <link rel=\"stylesheet\" href=\"${2:style/main.css}\">",
+      "</head>",
+      "<body>",
+      "  "
+      "  <script src=\"${3:scripts/main.js}\"></script>",
+      "</body>",
+      "</html>"
+    ]
+  }
+}
