@@ -30,7 +30,7 @@
     "prefix": "forii",
     "body": [
       "for (var ${i} = ${length}; ${i} >= 0; ${i}--) {",
-        "$3",
+      "  $3",
       "}"
     ],
     "description": "Scaffolds the basics of a for loop with the variable i set as the index."
@@ -64,7 +64,7 @@
     "prefix": "_func", 
     "body": [
       "function ${1:name}(${2:params}) {",
-      "  $3",
+        "  $3",
       "}"
     ]
   },

@@ -5,6 +5,8 @@
 	"editor.insertSpaces": true,
   "editor.tabSize": 2,
   "javascript.suggest.useCodeSnippetsOnMethodSuggest": true,
+  "diffEditor.ignoreTrimWhitespace": false,
+  "files.trimTrailingWhitespace": true,
   "search.exclude": {
     "**/node_modules": true,
     "**/bower_components": true,
@@ -14,6 +16,7 @@
     "**/null": true,
     "**/dist": true,
     "**/typings": true,
-    "**/_site": true
+    "**/_site": true,
+    "**/iisnode": true
   }
 }
